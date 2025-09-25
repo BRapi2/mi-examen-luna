@@ -1,3 +1,39 @@
+# 📝 Sistema de Registro de Estudiantes
+
+Una aplicación web desarrollada con **React.js** que permite registrar información completa de estudiantes.
+
+## 🚀 Características
+
+- ✅ Formulario completo para registro de estudiantes
+- ✅ Campos validados: nombres, apellidos, fecha de nacimiento, dirección, teléfono y email
+- ✅ Vista de confirmación que muestra los datos por 7 segundos
+- ✅ Interfaz responsiva y moderna
+- ✅ Limpieza automática del formulario después del registro
+
+## 🛠️ Tecnologías Utilizadas
+
+- **React.js** - Biblioteca de JavaScript para construir interfaces de usuario
+- **CSS3** - Para estilos y diseño responsivo
+- **HTML5** - Estructura semántica
+
+## 📋 Campos del Formulario
+
+1. **Nombres** - Campo de texto requerido
+2. **Apellidos** - Campo de texto requerido  
+3. **Fecha de Nacimiento** - Selector de fecha
+4. **Dirección** - Área de texto para dirección completa
+5. **Teléfono** - Campo para número telefónico
+6. **Email** - Campo de email con validación
+
+## 🔄 Flujo de la Aplicación
+
+1. El usuario completa el formulario con los datos del estudiante
+2. Al enviar, se muestra una vista de confirmación con todos los datos
+3. Después de 7 segundos, la aplicación regresa automáticamente al formulario inicial
+4. El formulario se limpia para permitir un nuevo registro
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

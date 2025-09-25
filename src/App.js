@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
 
+/**
+ * Componente principal de la aplicación
+ * Maneja el registro de estudiantes con formulario completo
+ * @returns {JSX.Element} Formulario de registro de estudiantes
+ */
 function App() {
   const [formData, setFormData] = useState({
     nombres: '',
@@ -13,6 +18,10 @@ function App() {
   
   const [submitting, setSubmitting] = useState(false);
 
+  /**
+   * Maneja el envío del formulario
+   * Muestra los datos por 7 segundos y luego limpia el formulario
+   */
   const handleSubmit = event => {
     event.preventDefault();
     setSubmitting(true);
@@ -20,7 +29,7 @@ function App() {
     // Muestra los datos por 7 segundos y luego volver al formulario
     setTimeout(() => {
       setSubmitting(false);
-      // Limpia el formulario
+      // Limpia el formulario para permitir nuevo registro
       setFormData({
         nombres: '',
         apellidos: '',
@@ -32,6 +41,10 @@ function App() {
     }, 7000);
   }
 
+  /**
+   * Maneja los cambios en los campos del formulario
+   * @param {Event} event - Evento del input
+   */
   const handleChange = event => {
     setFormData({
       ...formData,
