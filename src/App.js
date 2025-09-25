@@ -59,13 +59,23 @@ function App() {
       {submitting ? (
         <div className="confirmacion">
           <h2>Datos del Estudiante Registrado:</h2>
-          <div className="datos-estudiante">
-            <p><strong>Nombres:</strong> {formData.nombres}</p>
-            <p><strong>Apellidos:</strong> {formData.apellidos}</p>
-            <p><strong>Fecha de Nacimiento:</strong> {formData.fechaNacimiento}</p>
-            <p><strong>Dirección:</strong> {formData.direccion}</p>
-            <p><strong>Teléfono:</strong> {formData.telefono}</p>
-            <p><strong>Email:</strong> {formData.email}</p>
+          <div className="perfil-estudiante">
+            <div className="foto-perfil">
+              <img 
+                src="/aguilar.png" 
+                alt="Foto de perfil del estudiante" 
+                className="imagen-perfil"
+              />
+              <p className="nombre-completo">{formData.nombres} {formData.apellidos}</p>
+            </div>
+            <div className="datos-estudiante">
+              <p><strong>Nombres:</strong> {formData.nombres}</p>
+              <p><strong>Apellidos:</strong> {formData.apellidos}</p>
+              <p><strong>Fecha de Nacimiento:</strong> {formData.fechaNacimiento}</p>
+              <p><strong>Dirección:</strong> {formData.direccion}</p>
+              <p><strong>Teléfono:</strong> {formData.telefono}</p>
+              <p><strong>Email:</strong> {formData.email}</p>
+            </div>
           </div>
           <p className="mensaje-retorno">Retornando al formulario en unos segundos...</p>
         </div>
